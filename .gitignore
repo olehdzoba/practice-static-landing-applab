@@ -1,0 +1,5 @@
+# I am not sure of copyright policy for design files
+design/
+
+dist/
+node_modules/
