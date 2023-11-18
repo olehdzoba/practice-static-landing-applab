@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0 30px;
+}
+
+img {
+  display: block;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  border-radius: 9999px;
+  padding: 7px 30px;
+  border: none;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: 0.1s linear color, 0.1s linear background-color, 0.1s linear border-color;
+  align-self: baseline;
+  min-width: 140px;
+
+  & + .button {
+    margin-right: 15px;
+  }
+
+  &.invert {
+    background-color: transparent;
+    color: blue;
+  }
+
+  &:hover {
+    border-color: blue;
+    background-color: transparent;
+    color: blue;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.no-flex {
+  display: block;
+
+  h2,
+  p {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+.background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: -1;
+
+  bottom: 0;
+  top: unset;
+  transform: translate(-50%, 0);
+
+  &.full-height {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.text-small {
+  font-size: 18px;
+}
+
+.text-large {
+  font-size: 48px;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
