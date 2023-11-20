@@ -7,12 +7,22 @@
     <link rel="icon" href="images/favicon.png" />
     <meta property="og:image" content="images/dist/preview.jpg" />
     <link rel="stylesheet" href="css/app.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
 
     <title>AppLab</title>
 
     <script src="https://kit.fontawesome.com/1b969caf0d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   </head>
   <body class="landing">
+    <div id="disclaimer" class="media-disclaimer">
+      The site was not built responsive!
+      <i id="close-disclaimer" class="fa-solid fa-xmark"></i>
+    </div>
+
     <header class="header">
       <div class="logo-container">
         <img src="images/dist/logo.png" alt="AppLab" />
@@ -21,19 +31,19 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#">Key Features</a>
+            <a href="#features">Key Features</a>
           </li>
           <li class="nav-item">
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#">Testiminial</a>
+            <a href="#testiminial">Testiminial</a>
           </li>
           <li class="nav-item">
-            <a href="#">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +52,7 @@
     </header>
 
     <main>
-      <section class="section top-section">
+      <section id="home" class="section top-section">
         <div class="side-content">
           <div class="badge-container">
             <div class="badge">
@@ -103,7 +113,7 @@
         </ul>
       </section>
 
-      <section class="section features-section">
+      <section id="features" class="section features-section">
         <div class="side-content">
           <h2>Awesome apps features</h2>
           <p class="subtitle">
@@ -293,7 +303,7 @@
         </div>
       </section>
 
-      <section class="section payment-section no-flex">
+      <section id="pricing" class="section payment-section no-flex">
         <h2>Get awesome features, without extra charges</h2>
         <p class="subtitle">
           The rise of mobile devices transforms the way we consume information entirely.
@@ -311,7 +321,7 @@
           <div class="plan-card">
             <div class="plan-top">
               <div class="price">
-                <span class="number">$0</span>
+                <span id="price-monthly" class="number">$0</span>
                 / month
               </div>
               <h3>Business Class</h3>
@@ -329,7 +339,7 @@
           <div class="plan-card">
             <div class="plan-top">
               <div class="price">
-                <span class="number">$99</span>
+                <span id="price-anually" class="number">$99</span>
                 / month
               </div>
               <h3>Pro Master</h3>
@@ -349,38 +359,67 @@
         </div>
       </section>
 
-      <section class="section testimony-section">
+      <section id="testiminial" class="section testimony-section">
         <div class="side-content">
           <h2>Meet Client Satisfaction by using product</h2>
           <p class="subtitle">
             The rise of mobile devices transforms the way we consume information entirely and the
             world's most elevant cahnnels such as Facebook.
           </p>
-          <div class="testimony">
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h3>User friendly & Customization</h3>
-            <p>
-              Bring to the table win-win survival startegies to ensure proactive domination. At the
-              end of the day, going forward, a new normal that has evolved from generation X is on
-              the runway heading towards a streamlined cloud solution. User generated content in
-              real-time will have multiple touchpoints for offsharing.
-            </p>
-            <div class="client-profile">
-              <img src="images/dist/client.png" alt="Zoltan Nemeth Picture" />
-              <h4>Zoltan Nemeth</h4>
-              <p class="subtitle">CEO of Pixler Lab</p>
-
-              <div class="testimony-control">
-                <button class="arrow mirrored"><i class="fa-solid fa-arrow-right"></i></button>
-                <button class="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+          <div id="testimonies" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3>User friendly & Customization</h3>
+                  <p>
+                    Bring to the table win-win survival startegies to ensure proactive domination.
+                    At the end of the day, going forward, a new normal that has evolved from
+                    generation X is on the runway heading towards a streamlined cloud solution. User
+                    generated content in real-time will have multiple touchpoints for offsharing.
+                  </p>
+                  <div class="client-profile">
+                    <img src="images/dist/client.png" alt="Zoltan Nemeth Picture" />
+                    <h4>Zoltan Nemeth</h4>
+                    <p class="subtitle">CEO of Pixler Lab</p>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3>Nice Customer Support</h3>
+                  <p>
+                    Bring to the table win-win survival startegies to ensure proactive domination.
+                    At the end of the day, going forward, a new normal that has evolved from
+                    generation X is on the runway heading towards a streamlined cloud solution. User
+                    generated content in real-time will have multiple touchpoints for offsharing.
+                  </p>
+                  <div class="client-profile">
+                    <img src="images/dist/client2.png" alt="Melton Smith Picture" />
+                    <h4>Melton Smith</h4>
+                    <p class="subtitle">CEO of ImaginaryLab</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+
+          <div class="testimony-control">
+            <button id="prev-arrow" class="arrow mirrored">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button id="next-arrow" class="arrow"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -389,7 +428,7 @@
         </div>
       </section>
 
-      <section class="section faq-section no-flex">
+      <section id="faq" class="section faq-section no-flex">
         <h2>Frequently asked questions</h2>
         <p class="subtitle">
           The rise of mobile devices transforms the way we consume information entirely and the
@@ -459,7 +498,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="logo-container">
         <img src="images/dist/logo-invert.png" alt="AppLab" />
@@ -468,19 +506,19 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#">Key Features</a>
+            <a href="#features">Key Features</a>
           </li>
           <li class="nav-item">
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#">Testiminial</a>
+            <a href="#testiminial">Testiminial</a>
           </li>
           <li class="nav-item">
-            <a href="#">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
         </ul>
       </nav>
