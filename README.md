@@ -6,7 +6,7 @@ Welcome to AppLab, a static landing page created to showcase web development ski
 
 ## Credits
 
-The captivating design of this landing page is credited to [Arifur Rahman Tushar](https://dribbble.com/ArifurRahman). Special thanks to him for providing this creative design free of charge.
+The captivating design of this landing page is credited to [Arifur Rahman Tushar](https://dribbble.com/ArifurRahman) downloaded at [Freebiesbug](https://freebiesbug.com/psd-freebies/landing-template-app-showcasing/). Special thanks to him for providing this creative design free of charge.
 
 ---
 
