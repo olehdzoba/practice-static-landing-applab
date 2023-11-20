@@ -1,11 +1,10 @@
 // USER VARIABLES SECTION
-
-$accent: orange; // Accent Color
+$accent: #2500f9; // Accent Color
 $fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
-$lineheight: 1.65; // Document Line Height
-$userfont: roboto-oh5, sans-serif; // User Font Family
-$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$textcolor: #616368; // Text Color
+$headingcolor: #242f51;
+$lineheight: 1.7; // Document Line Height
+$userfont: "Poppins", sans-serif; // User Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px;
@@ -15,10 +14,10 @@ $gutter: $grid-gutter-width;
 
 @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 @mixin font($fname, $fstyle, $fweight, $furl) {
   @font-face {
@@ -28,6 +27,3 @@ $gutter: $grid-gutter-width;
     src: url($furl) format("ttf");
   }
 }
-@include font("Poppins-gulp", normal, 400, "../fonts/Poppins-Regular.ttf");
-@include font("Poppins-gulp", normal, 600, "../fonts/Poppins-SemiBold.ttf");
-@include font("Poppins-gulp", normal, 700, "../fonts/Poppins-Bold.ttf");
